@@ -1,0 +1,13 @@
+{
+  "request": {
+    "method": "PUT",
+    "urlPattern": "/api/orders/1"
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "update-order.json",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

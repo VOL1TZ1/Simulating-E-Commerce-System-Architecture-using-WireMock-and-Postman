@@ -1,0 +1,13 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/api/payments"
+  },
+  "response": {
+    "status": 201,
+    "bodyFileName": "create-payment.json",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

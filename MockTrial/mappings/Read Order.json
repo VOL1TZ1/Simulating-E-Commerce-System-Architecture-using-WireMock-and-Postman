@@ -1,0 +1,13 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPattern": "/api/orders/1"
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "read-order.json",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

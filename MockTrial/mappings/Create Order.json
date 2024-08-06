@@ -1,0 +1,13 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/api/orders"
+  },
+  "response": {
+    "status": 201,
+    "bodyFileName": "create-order.json",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPattern": "/api/users/1"
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "read-user.json",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}
