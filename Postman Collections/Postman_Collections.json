@@ -2,7 +2,7 @@
 	"info": {
 		"_postman_id": "92cbb39c-d078-4996-92f2-a2614fcdbeb5",
 		"name": "E-Commerce System Architecture",
-		"description": "The objective of this project is to simulate the architecture of an e-commerce system using WireMock. by creating mock endpoints to replicate the behavior of various services within the system, allowing for isolated and controlled testing of APIs without relying on actual service dependencies, then making testcases and excute them using Postman .",
+		"description": "**The objective of this project is to simulate the architecture of an e-commerce system using WireMock. by creating mock endpoints to replicate the behavior of various services within the system, allowing for isolated and controlled testing of APIs without relying on actual service dependencies, then making test cases and executing them using Postman.**",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
 	"item": [
