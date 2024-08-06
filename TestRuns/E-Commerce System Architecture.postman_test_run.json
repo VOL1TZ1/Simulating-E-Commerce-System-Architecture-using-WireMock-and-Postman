@@ -1,0 +1,780 @@
+{
+	"id": "003047e4-b693-47f2-afb2-9799007b4e59",
+	"name": "E-Commerce System Architecture",
+	"timestamp": "2024-08-06T09:04:34.046Z",
+	"collection_id": "36524406-92cbb39c-d078-4996-92f2-a2614fcdbeb5",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 68,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-08-06T09:04:33.041Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "de78b367-116e-4001-8464-ded7279137bc",
+			"name": "New User",
+			"url": "http://localhost:9990/api/users",
+			"time": 402,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Response status code is 201": true,
+				"Response has the required fields - message and userId": true,
+				"UserId is a positive integer": true,
+				"Content-Type header is application/json": true,
+				"Message is a non-empty string": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required fields - message and userId": {
+					"pass": 1,
+					"fail": 0
+				},
+				"UserId is a positive integer": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type header is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Message is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				402
+			],
+			"allTests": [
+				{
+					"Response status code is 201": true,
+					"Response has the required fields - message and userId": true,
+					"UserId is a positive integer": true,
+					"Content-Type header is application/json": true,
+					"Message is a non-empty string": true
+				}
+			]
+		},
+		{
+			"id": "10c4d3e2-34ef-449e-b497-26464d5fd9b5",
+			"name": "User Login",
+			"url": "http://localhost:9990/api/login",
+			"time": 38,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Response has the required fields - message and token": true,
+				"Token is a non-empty string": true,
+				"Content-Type header is application/json": true,
+				"Message is a non-empty string": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required fields - message and token": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Token is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type header is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Message is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				38
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Response has the required fields - message and token": true,
+					"Token is a non-empty string": true,
+					"Content-Type header is application/json": true,
+					"Message is a non-empty string": true
+				}
+			]
+		},
+		{
+			"id": "a82b4902-18aa-42b3-a10b-c014313983bc",
+			"name": "Read User",
+			"url": "http://localhost:9990/api/users/1",
+			"time": 12,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Content-Type header is application/json": true,
+				"UserId should exist and be a number": true,
+				"Email is in a valid format": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type header is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"UserId should exist and be a number": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Email is in a valid format": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				12
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Content-Type header is application/json": true,
+					"UserId should exist and be a number": true,
+					"Email is in a valid format": true
+				}
+			]
+		},
+		{
+			"id": "5b0f744b-db47-43cd-b235-33ced1947be3",
+			"name": "Update User",
+			"url": "http://localhost:9990/api/users/1",
+			"time": 10,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Response has the required Content-Type header with value application/json": true,
+				"Message field is present in the response": true,
+				"Message is a non-empty string": true,
+				"Verify that the HTTP method used is PUT": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required Content-Type header with value application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Message field is present in the response": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Message is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify that the HTTP method used is PUT": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				10
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Response has the required Content-Type header with value application/json": true,
+					"Message field is present in the response": true,
+					"Message is a non-empty string": true,
+					"Verify that the HTTP method used is PUT": true
+				}
+			]
+		},
+		{
+			"id": "4cfa7443-da99-4fac-a3d8-16f5697ee134",
+			"name": "DeleteUser",
+			"url": "http://localhost:9990/api/users/1",
+			"time": 7,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Content type is application/json": true,
+				"Message field is present in the response": true,
+				"Message field is a non-empty string": true,
+				"Verify that the response body is not empty": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content type is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Message field is present in the response": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Message field is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify that the response body is not empty": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				7
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Content type is application/json": true,
+					"Message field is present in the response": true,
+					"Message field is a non-empty string": true,
+					"Verify that the response body is not empty": true
+				}
+			]
+		},
+		{
+			"id": "fd88498a-50d9-44fa-ba99-735f7a73ee82",
+			"name": "Create Product",
+			"url": "http://localhost:9990/api/products",
+			"time": 6,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Response status code is 201": true,
+				"Response has the required fields - message and productId": true,
+				"ProductId is a non-negative integer": true,
+				"Content-Type header is application/json": true,
+				"Message is a non-empty string": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required fields - message and productId": {
+					"pass": 1,
+					"fail": 0
+				},
+				"ProductId is a non-negative integer": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type header is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Message is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				6
+			],
+			"allTests": [
+				{
+					"Response status code is 201": true,
+					"Response has the required fields - message and productId": true,
+					"ProductId is a non-negative integer": true,
+					"Content-Type header is application/json": true,
+					"Message is a non-empty string": true
+				}
+			]
+		},
+		{
+			"id": "c03dde0f-2cee-4846-ab82-be6897003baf",
+			"name": "Read Product",
+			"url": "http://localhost:9990/api/products/1",
+			"time": 9,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Response has the required fields - productId, name, and price": true,
+				"Price is a non-negative number": true,
+				"Content-Type header is application/json": true,
+				"ProductId is a non-negative integer": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required fields - productId, name, and price": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Price is a non-negative number": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type header is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"ProductId is a non-negative integer": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				9
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Response has the required fields - productId, name, and price": true,
+					"Price is a non-negative number": true,
+					"Content-Type header is application/json": true,
+					"ProductId is a non-negative integer": true
+				}
+			]
+		},
+		{
+			"id": "ec80b156-ec91-4c2a-ac50-a2e03dce01ca",
+			"name": "Update Product",
+			"url": "http://localhost:9990/api/products/1",
+			"time": 7,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Response Content-Type is application/json": true,
+				"Message field is present in the response": true,
+				"Message is a non-empty string": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response Content-Type is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Message field is present in the response": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Message is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				7
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Response Content-Type is application/json": true,
+					"Message field is present in the response": true,
+					"Message is a non-empty string": true
+				}
+			]
+		},
+		{
+			"id": "909cafb8-1a9c-4cfa-a089-57ffe8cb3870",
+			"name": "Delete Product",
+			"url": "http://localhost:9990/api/products/1",
+			"time": 11,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Content-Type is application/json": true,
+				"Message is a non-empty string": true,
+				"Verify that the product with ID 1 is deleted from the database": true,
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Message is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify that the product with ID 1 is deleted from the database": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				11
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Content-Type is application/json": true,
+					"Message is a non-empty string": true,
+					"Verify that the product with ID 1 is deleted from the database": true,
+					"Response time is less than 200ms": true
+				}
+			]
+		},
+		{
+			"id": "53575cba-72ce-4283-a261-8e5c463d96bc",
+			"name": "Create Order",
+			"url": "http://localhost:9990/api/orders",
+			"time": 20,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Response status code is 201": true,
+				"Response has the required fields - message and orderId": true,
+				"OrderId is a positive integer": true,
+				"Content-Type header is application/json": true,
+				"Message is a non-empty string": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required fields - message and orderId": {
+					"pass": 1,
+					"fail": 0
+				},
+				"OrderId is a positive integer": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type header is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Message is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				20
+			],
+			"allTests": [
+				{
+					"Response status code is 201": true,
+					"Response has the required fields - message and orderId": true,
+					"OrderId is a positive integer": true,
+					"Content-Type header is application/json": true,
+					"Message is a non-empty string": true
+				}
+			]
+		},
+		{
+			"id": "74de2010-3a28-40fb-9caa-4af511ed3165",
+			"name": "Read Order",
+			"url": "http://localhost:9990/api/orders/1",
+			"time": 12,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Content-Type header is application/json": true,
+				"Response has the required fields - orderId and status": true,
+				"OrderId is a non-negative integer": true,
+				"Status is a non-empty string": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type header is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required fields - orderId and status": {
+					"pass": 1,
+					"fail": 0
+				},
+				"OrderId is a non-negative integer": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				12
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Content-Type header is application/json": true,
+					"Response has the required fields - orderId and status": true,
+					"OrderId is a non-negative integer": true,
+					"Status is a non-empty string": true
+				}
+			]
+		},
+		{
+			"id": "76e0b7e6-2ddd-4f45-89a0-69ca5d7dbbcf",
+			"name": "Update Order",
+			"url": "http://localhost:9990/api/orders/1",
+			"time": 9,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Content-Type header is application/json": true,
+				"Message is a non-empty string": true,
+				"Message should not be empty": true,
+				"Verify response body has no additional unexpected fields": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type header is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Message is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Message should not be empty": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify response body has no additional unexpected fields": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				9
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Content-Type header is application/json": true,
+					"Message is a non-empty string": true,
+					"Message should not be empty": true,
+					"Verify response body has no additional unexpected fields": true
+				}
+			]
+		},
+		{
+			"id": "0460b57f-5070-4d23-b9d6-b876e9892c29",
+			"name": "Delete Order",
+			"url": "http://localhost:9990/api/orders/1",
+			"time": 9,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Content-Type is application/json": true,
+				"Message is present in the response": true,
+				"Message is a non-empty string": true,
+				"Verify that the order with ID 1 is deleted from the system": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Message is present in the response": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Message is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify that the order with ID 1 is deleted from the system": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				9
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Content-Type is application/json": true,
+					"Message is present in the response": true,
+					"Message is a non-empty string": true,
+					"Verify that the order with ID 1 is deleted from the system": true
+				}
+			]
+		},
+		{
+			"id": "ded7bfce-7262-4ff0-8dd1-a19d22118c1b",
+			"name": "Payment",
+			"url": "http://localhost:9990/api/payments",
+			"time": 7,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Response status code is 201": true,
+				"Response has the required fields - message and paymentId": true,
+				"PaymentId is a non-negative integer": true,
+				"Content-Type header is application/json": true,
+				"Message is a non-empty string": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required fields - message and paymentId": {
+					"pass": 1,
+					"fail": 0
+				},
+				"PaymentId is a non-negative integer": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type header is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Message is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				7
+			],
+			"allTests": [
+				{
+					"Response status code is 201": true,
+					"Response has the required fields - message and paymentId": true,
+					"PaymentId is a non-negative integer": true,
+					"Content-Type header is application/json": true,
+					"Message is a non-empty string": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 559,
+	"collection": {
+		"requests": [
+			{
+				"id": "de78b367-116e-4001-8464-ded7279137bc",
+				"method": "POST"
+			},
+			{
+				"id": "10c4d3e2-34ef-449e-b497-26464d5fd9b5",
+				"method": "POST"
+			},
+			{
+				"id": "a82b4902-18aa-42b3-a10b-c014313983bc",
+				"method": "GET"
+			},
+			{
+				"id": "5b0f744b-db47-43cd-b235-33ced1947be3",
+				"method": "PUT"
+			},
+			{
+				"id": "4cfa7443-da99-4fac-a3d8-16f5697ee134",
+				"method": "DELETE"
+			},
+			{
+				"id": "fd88498a-50d9-44fa-ba99-735f7a73ee82",
+				"method": "POST"
+			},
+			{
+				"id": "c03dde0f-2cee-4846-ab82-be6897003baf",
+				"method": "GET"
+			},
+			{
+				"id": "ec80b156-ec91-4c2a-ac50-a2e03dce01ca",
+				"method": "PUT"
+			},
+			{
+				"id": "909cafb8-1a9c-4cfa-a089-57ffe8cb3870",
+				"method": "DELETE"
+			},
+			{
+				"id": "53575cba-72ce-4283-a261-8e5c463d96bc",
+				"method": "POST"
+			},
+			{
+				"id": "74de2010-3a28-40fb-9caa-4af511ed3165",
+				"method": "GET"
+			},
+			{
+				"id": "76e0b7e6-2ddd-4f45-89a0-69ca5d7dbbcf",
+				"method": "PUT"
+			},
+			{
+				"id": "0460b57f-5070-4d23-b9d6-b876e9892c29",
+				"method": "DELETE"
+			},
+			{
+				"id": "ded7bfce-7262-4ff0-8dd1-a19d22118c1b",
+				"method": "POST"
+			}
+		]
+	}
+}
